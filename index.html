@@ -6,10 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nifty</title>
   <style>
-    div,div:after{border-radius:100%}body,div:after,html{height:100%;margin:0 auto}*{box-sizing:border-box}body{display:flex;align-items:center;font-family:monospace;justify-content:center;background-color:#13161c}div{position:relative;width:45vw;height:45vw;max-width:300px;max-height:300px;line-height:30vw;text-align:center;color:#252B37;background-color:#151823;animation:textColor 10s ease infinite}div:after{position:absolute;content:"";top:5vw;left:0;right:0;z-index:-1;width:100%;transform:scale(1);-webkit-filter:blur(5vw);-moz-filter:blur(5vw);-ms-filter:blur(5vw);filter:blur(5vw);background:linear-gradient(270deg,#0fffc1,#7e0fff);background-size:200% 200%;animation:animateGlow 10s ease infinite}@keyframes animateGlow{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@keyframes textColor{0%,100%{color:#7e0fff}50%{color:#0fffc1}}
+    .container,.orb{text-align:center}.orb,.orb:after{position:absolute;border-radius:100%}.logo,.orb{color:#FFF}*{box-sizing:border-box}.container{display:block;width:100%;height:100%;overflow:hidden;position:absolute}body,html{margin:0;padding:0;font-family:Pacifico,cursive;justify-content:center;background-color:#13161c}.orb{width:300vw;height:300vw;top:60vh;left:-105vw;background-color:#151823;animation:textColor 7s ease infinite;font-size:4em}.orb:after{content:"";top:20px;left:0;right:0;z-index:-1;height:100%;width:100%;margin:0 auto;transform:scale(1);-webkit-filter:blur(15vmax);-moz-filter:blur(15vmax);-ms-filter:blur(15vmax);filter:blur(15vmax);background:linear-gradient(270deg,#0fffc1,#7e0fff);background-size:200% 200%;animation:animateGlow 10s ease infinite}@keyframes animateGlow{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}.logo{animation:textColor 7s ease infinite;font-size:6em;position:relative;margin-top:30vh}
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <body>
-  <div></div>
+  <div class="container">
+    <div class="orb">
+  </div>
+  <div class="logo">
+    <span>Nifty</span>
+  </div>
+</div>
 </body>
 </html>
